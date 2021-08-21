@@ -34,13 +34,13 @@ document.getElementById('promo-btn').addEventListener('click',function(){
     const offer = parseFloat(totalprice)*0.2;
     const total = document.getElementById('total');
     const totalcoste =total.innerText;
-    if(promoInput =='khaise'){
+    if(promoInput =='stevekaku'){
         total.innerText= parseFloat (totalcoste) - parseFloat (offer);
         const error=document.getElementById('error-message');
         error.style.display='none';
         
     }
-    else if(promoInput!='khaise'){
+    else if(promoInput!='stevekaku'){
         const error=document.getElementById('error-message');
         error.style.display='block';
     }
