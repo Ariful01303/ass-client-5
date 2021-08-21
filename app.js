@@ -44,10 +44,10 @@ document.getElementById('promo-btn').addEventListener('click',function(){
         const error=document.getElementById('error-message');
         error.style.display='block';
     }
- 
+       
     
 })
-// memeory  evenhanglar
+// memeory  Event handlers
 
 const memory2Button =document.getElementById('memory-2ndbtn').addEventListener('click',function(){
    
@@ -59,7 +59,7 @@ const memory1Button =document.getElementById('memory-firstbtn').addEventListener
     getcostNumber('memory',0);
    
 })
-// storage  evenhanglar
+// storage Event handlers
 
 const storage1button =document.getElementById('storage-1stbtn').addEventListener('click',function(){
    
@@ -76,7 +76,7 @@ const storage3button =document.getElementById('storage-3rdbtn').addEventListener
     getcostNumber('storage',180);
 })
 
-//DeliveryCost evenhanglar
+//DeliveryCost Event handlers
 
 const delivery1btn = document.getElementById('delivery-1stbtn').addEventListener('click',function(){
     
