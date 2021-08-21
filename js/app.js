@@ -49,16 +49,18 @@ document.getElementById('promo-btn').addEventListener('click',function(){
 })
 // memeory  Event handlers
 
-const memory2Button =document.getElementById('memory-2ndbtn').addEventListener('click',function(){
-   
-    getcostNumber('memory',180);
-   
-})
 const memory1Button =document.getElementById('memory-firstbtn').addEventListener('click',function(){
     
     getcostNumber('memory',0);
    
 })
+
+const memory2Button =document.getElementById('memory-2ndbtn').addEventListener('click',function(){
+   
+    getcostNumber('memory',180);
+   
+})
+
 // storage Event handlers
 
 const storage1button =document.getElementById('storage-1stbtn').addEventListener('click',function(){
