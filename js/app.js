@@ -8,7 +8,7 @@ function getcostNumber(product,price){
     getTotal();
   
 }
-// Total price calculate 
+// previous Total price calculate 
 
 function getTotal(){
 
@@ -25,27 +25,27 @@ const total =updateTotal.innerText;
 updateTotal.innerText=previousTotal;
 
 }
-// input promo code setup and change total amount 
+// input promo code setup and Update total amount 
 
-document.getElementById('promo-btn').addEventListener('click',function(){
-    const promoCode =document.getElementById('promo-input');
-    const promoInput = promoCode.value;
+document.getElementById('pomo-btn').addEventListener('click',function(){
+    const pomoCode =document.getElementById('pomo-input');
+    const pomoInput = pomoCode.value;
     const totalprice =document.getElementById('total-cost').innerText;
     const offer = parseFloat(totalprice)*0.2;
     const total = document.getElementById('total');
     const totalcoste =total.innerText;
-    if(promoInput =='stevekaku'){
+    if(pomoInput =='stevekaku'){
         total.innerText= parseFloat (totalcoste) - parseFloat (offer);
         const error=document.getElementById('error-message');
         error.style.display='none';
         
     }
-    else if(promoInput!='stevekaku'){
+    else if(pomoInput!='stevekaku'){
         const error=document.getElementById('error-message');
         error.style.display='block';
     }
        
-    
+    pomoCode.value='';
 })
 // memeory  Event handlers
 
